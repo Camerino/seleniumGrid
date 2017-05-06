@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Regression Test Suite" duration-ms="12581" started-at="2017-05-06T18:03:53Z" finished-at="2017-05-06T18:04:06Z">
+    <groups>
+    </groups>
+    <test name="firefox test" duration-ms="7241" started-at="2017-05-06T18:03:53Z" finished-at="2017-05-06T18:04:01Z">
+      <class name="com.selenium.grid.GridTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.selenium.grid.GridTest@31a5c39e]" name="setUp" is-config="true" duration-ms="4640" started-at="2017-05-06T14:03:53Z" finished-at="2017-05-06T14:03:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://192.168.0.103:1010/wd/hub/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test_01()[pri:0, instance:com.selenium.grid.GridTest@31a5c39e]" name="test_01" duration-ms="2588" started-at="2017-05-06T14:03:58Z" finished-at="2017-05-06T14:04:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_01 -->
+      </class> <!-- com.selenium.grid.GridTest -->
+    </test> <!-- firefox test -->
+    <test name="chrome test" duration-ms="5314" started-at="2017-05-06T18:04:01Z" finished-at="2017-05-06T18:04:06Z">
+      <class name="com.selenium.grid.GridTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.selenium.grid.GridTest@49993335]" name="setUp" is-config="true" duration-ms="3127" started-at="2017-05-06T14:04:01Z" finished-at="2017-05-06T14:04:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://192.168.0.103:1010/wd/hub/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test_01()[pri:0, instance:com.selenium.grid.GridTest@49993335]" name="test_01" duration-ms="2183" started-at="2017-05-06T14:04:04Z" finished-at="2017-05-06T14:04:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_01 -->
+      </class> <!-- com.selenium.grid.GridTest -->
+    </test> <!-- chrome test -->
+  </suite> <!-- Regression Test Suite -->
+</testng-results>

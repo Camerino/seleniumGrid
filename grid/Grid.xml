@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Test Suite" verbose="1" parallel = "tests" thread-count='1'>
+	<listeners>
+		<listener class-name="com.selenium.utility.ExtentTestNGIReporterListener" />
+	</listeners>
+
+	<test name="firefox test">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="hubURL" value="http://192.168.0.103:1010/wd/hub/" />
+
+		<classes>
+
+			<class
+				name="com.selenium.grid.GridTest" />
+
+		</classes>
+
+	</test>  
+	
+	<test name="chrome test">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="hubURL" value="http://192.168.0.103:1010/wd/hub/" />
+
+		<classes>
+
+			<class
+				name="com.selenium.grid.GridTest" />
+
+		</classes>
+
+	</test>  
+	
+
+</suite>
