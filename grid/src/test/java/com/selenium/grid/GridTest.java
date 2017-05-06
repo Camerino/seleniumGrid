@@ -11,7 +11,10 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -34,9 +37,11 @@ public class GridTest {
 				cap.setPlatform(Platform.WINDOWS);
 				browserType = browserName;
 				System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
-				/*ChromeOptions options = new ChromeOptions();
-		        options.addArguments("--test-type");
-		        cap.setCapability(ChromeOptions.CAPABILITY, options);*/
+				/*
+				 * ChromeOptions options = new ChromeOptions();
+				 * options.addArguments("--test-type");
+				 * cap.setCapability(ChromeOptions.CAPABILITY, options);
+				 */
 
 			} else if (browserName.contains("ie")) {
 				cap.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
@@ -46,7 +51,7 @@ public class GridTest {
 			} else if (browserName.contains("firefox")) {
 				cap.setBrowserName("firefox");
 				System.setProperty("webdriver.gecko.driver", "src/test/resources/geckodriver.exe");
-				//cap.setPlatform(Platform.WINDOWS);
+				// cap.setPlatform(Platform.WINDOWS);
 				browserType = browserName;
 			}
 
@@ -59,11 +64,10 @@ public class GridTest {
 			logger.error("Starting remote browser failed for '" + browserName + "'", e);
 		}
 	}
-	
-	@AfterTest
-	public void tearDown() throws Exception
-	{
-		Thread.sleep(3*1000);
+
+	@AfterMethod
+	public void tearDown() throws Exception {
+		Thread.sleep(3 * 1000);
 		driver.close();
 		driver.quit();
 	}
@@ -71,7 +75,7 @@ public class GridTest {
 	@Test
 	public void test_01() {
 		try {
-			
+
 			driver.get("https://www.facebook.com/");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -83,13 +87,13 @@ public class GridTest {
 
 	}
 
-	/*
-	 * @Test public void test_02() { driver.get("https://www.google.com/");
-	 * String title = driver.getTitle();
-	 * System.out.println("test is ending on browser " + browserType + " on " +
-	 * cap.getPlatform()); logger.info("test is ending on browser " +
-	 * browserType + " on " + cap.getPlatform()); Assert.assertEquals(title,
-	 * "Goo"); }
-	 */
+	@Test
+	public void test_02() {
+		driver.get("https://www.google.com/");
+		String title = driver.getTitle();
+		System.out.println("test is ending on browser " + browserType + " on " + cap.getPlatform());
+		logger.info("test is ending on browser " + browserType + " on " + cap.getPlatform());
+		Assert.assertEquals(title, "Google");
+	}
 
 }
