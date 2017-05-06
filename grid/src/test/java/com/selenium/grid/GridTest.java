@@ -11,6 +11,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -57,6 +58,14 @@ public class GridTest {
 		} catch (Exception e) {
 			logger.error("Starting remote browser failed for '" + browserName + "'", e);
 		}
+	}
+	
+	@AfterTest
+	public void tearDown() throws Exception
+	{
+		Thread.sleep(3*1000);
+		driver.close();
+		driver.quit();
 	}
 
 	@Test
