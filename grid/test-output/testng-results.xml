@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression Test Suite" duration-ms="12581" started-at="2017-05-06T18:03:53Z" finished-at="2017-05-06T18:04:06Z">
+  <suite name="Regression Test Suite" duration-ms="25975" started-at="2017-05-06T21:35:11Z" finished-at="2017-05-06T21:35:37Z">
     <groups>
     </groups>
-    <test name="firefox test" duration-ms="7241" started-at="2017-05-06T18:03:53Z" finished-at="2017-05-06T18:04:01Z">
+    <test name="firefox test" duration-ms="23210" started-at="2017-05-06T21:35:11Z" finished-at="2017-05-06T21:35:34Z">
       <class name="com.selenium.grid.GridTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.selenium.grid.GridTest@31a5c39e]" name="setUp" is-config="true" duration-ms="4640" started-at="2017-05-06T14:03:53Z" finished-at="2017-05-06T14:03:58Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.selenium.grid.GridTest@3f49dace]" name="setUp" is-config="true" duration-ms="3696" started-at="2017-05-06T17:35:11Z" finished-at="2017-05-06T17:35:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[http://192.168.0.103:1010/wd/hub/]]>
+                <![CDATA[http://192.168.0.103:4444/wd/hub/]]>
               </value>
             </param>
             <param index="1">
@@ -23,19 +23,47 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test_01()[pri:0, instance:com.selenium.grid.GridTest@31a5c39e]" name="test_01" duration-ms="2588" started-at="2017-05-06T14:03:58Z" finished-at="2017-05-06T14:04:01Z">
+        <test-method status="PASS" signature="test_01()[pri:0, instance:com.selenium.grid.GridTest@3f49dace]" name="test_01" duration-ms="2663" started-at="2017-05-06T17:35:15Z" finished-at="2017-05-06T17:35:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_01 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.selenium.grid.GridTest@3f49dace]" name="tearDown" is-config="true" duration-ms="6025" started-at="2017-05-06T17:35:17Z" finished-at="2017-05-06T17:35:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.selenium.grid.GridTest@3f49dace]" name="setUp" is-config="true" duration-ms="3120" started-at="2017-05-06T17:35:23Z" finished-at="2017-05-06T17:35:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://192.168.0.103:4444/wd/hub/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test_02()[pri:0, instance:com.selenium.grid.GridTest@3f49dace]" name="test_02" duration-ms="1709" started-at="2017-05-06T17:35:26Z" finished-at="2017-05-06T17:35:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_02 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.selenium.grid.GridTest@3f49dace]" name="tearDown" is-config="true" duration-ms="5980" started-at="2017-05-06T17:35:28Z" finished-at="2017-05-06T17:35:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.selenium.grid.GridTest -->
     </test> <!-- firefox test -->
-    <test name="chrome test" duration-ms="5314" started-at="2017-05-06T18:04:01Z" finished-at="2017-05-06T18:04:06Z">
+    <test name="chrome test" duration-ms="25975" started-at="2017-05-06T21:35:11Z" finished-at="2017-05-06T21:35:37Z">
       <class name="com.selenium.grid.GridTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.selenium.grid.GridTest@49993335]" name="setUp" is-config="true" duration-ms="3127" started-at="2017-05-06T14:04:01Z" finished-at="2017-05-06T14:04:04Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.selenium.grid.GridTest@20322d26]" name="setUp" is-config="true" duration-ms="4570" started-at="2017-05-06T17:35:11Z" finished-at="2017-05-06T17:35:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[http://192.168.0.103:1010/wd/hub/]]>
+                <![CDATA[http://192.168.0.103:4444/wd/hub/]]>
               </value>
             </param>
             <param index="1">
@@ -47,10 +75,38 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test_01()[pri:0, instance:com.selenium.grid.GridTest@49993335]" name="test_01" duration-ms="2183" started-at="2017-05-06T14:04:04Z" finished-at="2017-05-06T14:04:06Z">
+        <test-method status="PASS" signature="test_01()[pri:0, instance:com.selenium.grid.GridTest@20322d26]" name="test_01" duration-ms="2953" started-at="2017-05-06T17:35:15Z" finished-at="2017-05-06T17:35:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_01 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.selenium.grid.GridTest@20322d26]" name="tearDown" is-config="true" duration-ms="5957" started-at="2017-05-06T17:35:18Z" finished-at="2017-05-06T17:35:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.selenium.grid.GridTest@20322d26]" name="setUp" is-config="true" duration-ms="4029" started-at="2017-05-06T17:35:24Z" finished-at="2017-05-06T17:35:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://192.168.0.103:4444/wd/hub/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test_02()[pri:0, instance:com.selenium.grid.GridTest@20322d26]" name="test_02" duration-ms="2234" started-at="2017-05-06T17:35:28Z" finished-at="2017-05-06T17:35:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_02 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.selenium.grid.GridTest@20322d26]" name="tearDown" is-config="true" duration-ms="6216" started-at="2017-05-06T17:35:31Z" finished-at="2017-05-06T17:35:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.selenium.grid.GridTest -->
     </test> <!-- chrome test -->
   </suite> <!-- Regression Test Suite -->

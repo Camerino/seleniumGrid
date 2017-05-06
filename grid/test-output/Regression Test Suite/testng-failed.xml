@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Regression Test Suite]" parallel="tests">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Regression Test Suite]" parallel="tests">
   <parameter name="browserName" value="chrome"/>
-  <parameter name="hubURL" value="http://192.168.0.103:1010/wd/hub/"/>
+  <parameter name="hubURL" value="http://192.168.0.103:4444/wd/hub/"/>
   <listeners>
     <listener class-name="com.selenium.utility.ExtentTestNGIReporterListener"/>
   </listeners>
   <test name="firefox test">
     <parameter name="browserName" value="chrome"/>
-    <parameter name="hubURL" value="http://192.168.0.103:1010/wd/hub/"/>
+    <parameter name="hubURL" value="http://192.168.0.103:4444/wd/hub/"/>
     <classes>
       <class name="com.selenium.grid.GridTest"/>
     </classes>
   </test> <!-- firefox test -->
   <test name="chrome test">
     <parameter name="browserName" value="chrome"/>
-    <parameter name="hubURL" value="http://192.168.0.103:1010/wd/hub/"/>
+    <parameter name="hubURL" value="http://192.168.0.103:4444/wd/hub/"/>
     <classes>
       <class name="com.selenium.grid.GridTest"/>
     </classes>

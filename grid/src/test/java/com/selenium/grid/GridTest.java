@@ -22,7 +22,7 @@ import org.testng.annotations.Test;
 public class GridTest {
 	final static Logger logger = Logger.getLogger(GridTest.class);
 
-	private static WebDriver driver;
+	private WebDriver driver;
 	private static String browserType;
 	private static DesiredCapabilities cap;
 
